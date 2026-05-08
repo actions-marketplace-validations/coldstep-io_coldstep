@@ -53,7 +53,7 @@ jobs:
       COLDSTEP_DIFF_STRICT: ${{ inputs.coldstep_diff_strict == true && '1' || '0' }}
       NS_RUNNER_LABEL: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
 
       - uses: actions/setup-go@v6
         with:
@@ -287,7 +287,7 @@ jobs:
       # Align with coldstep-ci-runner defend-mode: release-binary smoke can miss deny JSONL on some runners.
       COLDSTEP_DEFEND_DENY_JSONL_STRICT: "0"
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v6.0.2
 
       - uses: actions/setup-go@v6
         with:
